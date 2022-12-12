@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./javascript/main.js" defer></script>
+</head>
+
+<body id="order-body">
+    <header>
+        <nav id="nav-about">
+            <div id="nav-div">
+                <div id="nav-div-2">
+                    <img id="logo"
+                        src="https://imgs.search.brave.com/66cwpZyAQnccBRw2Uyw_sFrXydSbe1InRStanInjFPU/rs:fit:400:400:1/g:ce/aHR0cHM6Ly90aGVs/b2dvbWl4LmNvbS9m/aWxlcy9pbWFnZWNh/Y2hlL3YzLWxvZ28t/ZGV0YWlsL0dlb3Jn/ZS1Cb2todWEtQUFB/LWxvZ28uanBn"
+                        alt="logo" width="100px" height="100px">
+                    <a href="./index.html"><button id="home" href="./index.html"><span
+                                id="nav-span">Home</span></button></a>
+                    <a href="./about.html"><button id="about" href="./about.html"><span
+                                id="nav-span">About</span></button></a>
+                    <a href="./order.html"><button id="order" href="./order.html"><span
+                                id="nav-span">Order</span></button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 id="order-h1">Get started</h1>
+
+<div id="order-main-div">
+
+    <div id="right-div">
+        
+        <h2 id="order-sum">Order</h2>
+
+        <div>
+            <h2 id="total"></h2>
+            <p id="total-p"></p>
+        </div>
+
+        <div id="products">
+            <article id="one">
+                <img id="pic1" src="https://imgs.search.brave.com/13QxSe5FxbUoe0e9ySqVuQr8HXKssueTPPCP55bCBEI/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly93d3cu/Y2FyaWQuY29tL2lt/YWdlcy9tZWd1aWFy/cy9hdXRvLWRldGFp/bGluZy9nNzcxNi5q/cGc"
+                    alt="wax" width="200px" height="200px">
+
+                <p>Our top of the line spray on wax $25</p>
+
+                <label for="wax">Add to order</label>
+                <button id="subtract" onclick="subtracted()">-</button>
+                <button id="add" onclick="added()">+</button>
+            </article>
+
+            <article id="two">
+                <img id="pic2" src="https://imgs.search.brave.com/q1d-MqsJBLe6mifuGKM513S4yDXWFlcTnxttUS8lrNM/rs:fit:900:900:1/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lucGFydHMu/bmV0L2NsZWFuaW5n/LXByb3RlY3Rpb24v/aW50ZXJpb3Ivc2Vh/dC1pbnRlcmlvci1j/bGVhbmVycy9jMTM0/Ni9tZWd1aWFycy1o/ZWF2eS1kdXR5LW11/bHRpLXB1cnBvc2Ut/Y2xlYW5lci9wMzMz/MDg3NF85MDBfOTAw/LmpwZw"
+                    alt="cleaner" width="200px" height="200px">
+
+                <p>Our premium interior cleaner $25</p>
+
+                <label for="cleaner">Add to order</label>
+                <button id="subtract" onclick="subtracted()">-</button>
+                <button id="add" onclick="added()">+</button>
+            </article>
+                
+            <article id="three">
+                <img id="pic3" src="https://imgs.search.brave.com/5XHFjEF7peUkTen3a0zOCHQIuN6TtchweHEAppeyIRk/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOGJi/ODZhYjktYWQ1NS00/YzEzLWFiZDMtZmM5/ZmI3ZmI5MDFkXzEu/MDVjY2RlN2JlMzI1/MDY3Njg1YTk2ZmEy/NmYzMGUyNjQuanBl/Zw"
+                    alt="wax" width="200px" height="200px">
+
+                <p>Our legendary polish $25</p>
+
+                <label for="polish">Add to order</label>
+                <button id="subtract" onclick="subtracted()">-</button>
+                <button id="add" onclick="added()">+</button>
+            </article>
+        </div>
+
+        <div id="schedule-appointment">
+            <h2 id="schedule-now">Schedule Now</h2>
+
+            <form action="./thanks.html">
+
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time">
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+
+                <label for="work">Type of Service</label>
+                <input type="text" id="work" name="work" placeholder="Interior, Wash, Polish">
+
+                <label for="submit-2">Submit</label>
+                <input type="submit" id="submit-2" value="Submit"></a>
+
+            </form>
+        </div>
+
+    </div>
+    <div id="left-div">
+        <div id="email-div">
+     
+            <form id="email-form" action="POST">
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" placeholder="john123@gmail.com">
+                <label for="check">I agree to be contacted here</label>
+                <input type="checkbox" name="check" id="check" required>
+            </form>
+        </div>
+
+        <div id=payment-div>
+            <h2 id=payment>Payment Information</h2>
+            <p id=transactions>All transactions are safe and encrypted</p>
+
+            <form action="POST" id="payment-from">
+
+                <label for="name-on-card">Name on Card</label>
+                <input type="text" id="name-on-card" name="name-on-card" required placeholder="John J Doe">
+
+                <label for="card-number">Card Number</label>
+                <input type="text" name="card-number" id="card-number" required placeholder="1234-1234-1234-1234">
+
+                <label for="expiration-date">Expiration Date</label>
+                <input type="text" name="expiration-date" id="expiration-date" required placeholder="MM/YY">
+
+                <label for="cvc">CVC Code</label>
+                <input type="text" name="cvc" id="cvc" required placeholder="123">
+
+                <label for="save">Save my billing info for future purchases</label>
+                <input type="checkbox" name="save" id="save">
+            </form>
+        </div>
+
+        <div id="billing-address">
+            <h2 id="billing">Billing Address</h2>
+
+            <form action="./thanks.html">
+
+                <label for="country" id="country2">Country</label>
+
+                <select name="country" id="country" required>
+                    <option value="canada">Canada</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+
+                <label for="address">Street</label>
+                <input type="text" name="address" id="address" required placeholder="123 Lakeside">
+
+                <div id="city-state">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" required placeholder="Toronto">
+
+                    <label for="province">State, Province, or Region</label>
+                    <input type="text" name="province" id="province" required placeholder="Ontario">
+
+                    <label for="postal">Postal Code</label>
+                    <input type="text" name="postal" id="postal" required placeholder="L12 23L">
+
+                    <label for="delivery">Delivery Address Same As Billing</label>
+                    <input type="checkbox" name="delivery" id="delivery" required>
+                </div>
+
+                <div id="buy-now">
+                    <label id="buy" for="buy">Buy Now</label>
+                <input type="submit" id="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    
+    </div>
+
+    <footer id="order-footer">
+        <h2>For all other inquiries please visit us at 123 Lakeside</h2>
+    </footer>
+</body>
+
+</html>
